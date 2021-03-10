@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web site</title>
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body">
+    <div class="top-bar">
+        <div class="logo">
+            <IMG class="logoItem" src="images/logo-1.png" alt="Logo" width=80 height=40>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a id="selected" href="index.html">Naslovna</a></li>
+                <li><a href="html/about.html">O nama</a></li>
+                <li><a href="html/portfolio.html">Usluge</a></li>
+                <li><a href="html/contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-text-items">
+                <h2>FX Consulting</h2>
+                <p>MI STIŽEMO NA CILJ</p>
+            </div>
+        </div>
+    </div>
+
+    <div class=supportedSystems>
+        <h1>Usluge</h1>
+    </div>
+
+    <div class="Slick-container">
+        <div class="main-content">
+            <div class="main1">
+                <h2>Konsalting</h2>
+                <img src="images/consulting1.jpg" alt="Konsalting" width=250 height=250>
+            </div>
+            <div class="main1">
+                <h2>Osnivanje</h2>
+                <img src="images/begining.jpg" alt="Osnivanje" width=250 height=250>
+            </div>
+            <div class="main1">
+                <h2>Knjigovodstvo</h2>
+                <img src="images/bookkeping.jpeg" alt="Knjigovodstvo" width=250 height=250>
+            </div>
+            <div class="main1">
+                <h2>Pečati</h2>
+                <img src="images/pecati.jpg" alt="Pecati" width=250 height=250>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <div class="contact-text">
+            <div class="contact-items">
+                <h2>Contact Us</h2>
+
+                <form onsubmit="return validateForm()">
+
+                    <div class="wrapper">
+                        <div class="contact-form">
+
+                            <div class="input-fields">
+                                <input type="text" id="name" class="input" placeholder="Ime">
+                                <input type="email" id="email" class="input" placeholder="Email">
+                                <input type="text" id="phone" class="input" placeholder="Telefon">
+                                <input type="text" id="subject" class="input" placeholder="Tema">
+                                <p class="gender">
+                                    <input type="radio" name="gender" value="Male"> Muško &nbsp;
+                                    <input type="radio" name="gender" value="Female"> Žensko
+                                </p>
+                            </div>
+                            <div class="msg">
+                                <textarea id="message" placeholder="Vaša poruka..."></textarea>
+                                <button class="btn" type="submit">Pošalji</button>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="partner-text">
+            <div class="partner-items">
+                <h2>Partners</h2>
+                <a href="https://apple.com" target="_blank"><img src="images/icon.png" alt="Apple" width=30
+                        height=30></a>
+                <a href="https://www.google.com/" target="_blank"><img src="images/search.png" alt="Google" width=30
+                        height=30></a>
+                <a href="https://www.amazon.com/" target="_blank"><img src="images/amazon.png" alt="Amazon" width=30
+                        height=30></a>
+                <a href="https://www.paypal.com/rs/home" target="_blank"><img src="images/paypal.png" alt="PayPal"
+                        width=30 height=30></a>
+            </div>
+        </div>
+        <div class="socialNetworks-text">
+            <div class="socialNetworks-items">
+                <h2>Social Networks</h2>
+                <a href="https://web.facebook.com/" target="_blank"><IMG src="images/facebook.png" alt="Logo" width=30
+                        height=30></a>
+                <a href="https://www.youtube.com/" target="_blank"><IMG src="images/youtube.png" alt="Logo" width=30
+                        height=30></a>
+                <a href="https://www.linkedin.com/" target="_blank"><IMG src="images/linkedin.png" alt="Logo" width=30
+                        height=30></a>
+                <a href="https://www.instagram.com/" target="_blank"><IMG src="images/instagram.png" alt="Logo" width=30
+                        height=30></a>
+                <a href="https://twitter.com/" target="_blank"><IMG src="images/twitter.png" alt="Logo" width=30
+                        height=30></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>
+            <p>Copyright © 2020 FX Consulting Inc. Sva prava zadržana.</p>
+            <p><a href="">Politika privatnosti</a> | <a href="">Uslovi korišćenja</a></p>
+            <p>Današnji datum: <b id="datum"></b></p>
+        </span>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.main-content').slick({
+            fade: true,
+            cssEase: 'ease-in-out'
+        });
+    </script>
+    <script src="javascript/forma.js"></script>
+    <script src="javascript/datum.js"></script>
+</body>
+
+</html>
